@@ -3,5 +3,6 @@
     <style name="InputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxStrokeColor">@color/black</item>
         <item name="hintTextColor">@color/black</item>
+        <item name="android:textCursorDrawable">@color/black</item>
     </style>
 </resources>

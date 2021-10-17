@@ -79,6 +79,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:id="@+id/username"
+            android:textCursorDrawable="@drawable/ic_cursor"
             android:layout_height="wrap_content"
             android:hint="@string/username">
 
@@ -104,6 +105,7 @@
             android:layout_width="match_parent"
             android:id="@+id/password_main"
             android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/ic_cursor"
             android:hint="@string/password"
             android:inputType="textPassword">
 
