@@ -11,7 +11,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="@dimen/page_margin"
-        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginTop="@dimen/page_margin"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@id/hello"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
         android:id="@+id/sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/page_margin2"
+        android:layout_marginTop="@dimen/page_margin"
         android:text="@string/sign_in_to_continue"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,18 +66,19 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/InputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/page_margin"
         android:layout_marginTop="@dimen/page_margin"
-        app:layout_constraintBottom_toTopOf="@id/password"
+        app:layout_constraintBottom_toTopOf="@id/password_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sign">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:id="@+id/username"
             android:layout_height="wrap_content"
             android:hint="@string/username">
 
@@ -88,8 +89,8 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/password_layout"
+        style="@style/InputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/page_margin"
@@ -101,6 +102,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:id="@+id/password_main"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword">
@@ -123,7 +125,7 @@
         app:layout_constraintHorizontal_bias="0.824"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_go"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password_layout" />
 
     <Button
         android:id="@+id/btn_go"
